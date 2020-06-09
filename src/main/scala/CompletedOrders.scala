@@ -15,9 +15,10 @@ object CompletedOrders {
 	def main(args:Array[String]):Unit = {
 
 		Logger.getLogger("org").setLevel(Level.ERROR)
-		
+		// Create input and outpu paths
 		val input = args(0)
 		val output = args(1)
+		// Create a sparkcontext
 
 		val sc = new SparkContext()
 
